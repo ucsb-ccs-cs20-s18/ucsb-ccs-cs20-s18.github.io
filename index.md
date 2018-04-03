@@ -25,10 +25,6 @@ title: CS8
 {% include hwk_table.html %}
 </div>
 
-<div data-role="collapsible" data-collapsed="false">
-<h2 id="exams">Exams</h2>
-{%include exam_table.html %}
-</div>
 
 <div data-role="collapsible" data-collapsed="false">
 <h2 id="teams">Lectures</h2>
