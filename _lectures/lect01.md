@@ -7,7 +7,7 @@ date: 2017-04-03 12:30:00.00-7:00
 
 # Software you need: Windows Version
 
-* MobaXTerm Home Edition: https://mobaxterm.mobatek.net/download-home-edition.html
+* MobaXTerm Home Edition: <https://mobaxterm.mobatek.net/download-home-edition.html>
 * Python 3.6.5 for Windows from <https://python.org>
 * Git for Windows: <https://git-scm.com/download/win>
 
