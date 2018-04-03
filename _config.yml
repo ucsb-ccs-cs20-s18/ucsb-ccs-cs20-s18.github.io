@@ -4,14 +4,13 @@ qtr: "S18"
 quarter: "Spring 2018"
 instructor: "Conrad"
 
-github_url: https://github.com/ucsb-cs8-s18/ucsb-cs8-s18.github.io
+github_url: https://github.com/ucsb-ccs-cs20-s18/ucsb-ccs-cs20-s18.github.io
 course_site: http://ucsb-cs8.github.io
 
 start_week: 1
 start_date: 2018-04-01 00:00:00.00-7:00
 num_weeks: 10
 extra_exam_week: true
-sections: "8am,&nbsp;9am,&nbsp;10am&nbsp;or&nbsp;11am"
 
 cal_dates: >
   [
