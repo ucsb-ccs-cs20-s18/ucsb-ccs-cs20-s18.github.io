@@ -43,9 +43,14 @@ In order to exit the python shell in terminal press Ctrl+D or type exit() in ord
 To install it, type this command into the terminal session
 (the Unix Terminal prompt) to install pytest for your CSIL account:
 
-
 ```
 pip3 install --user pytest
+```
+
+OR FOR YOUR OWN COMPUTER, just use:
+
+```
+pip3 install pytest
 ```
 
 To install pytest on Windows, see [this tutorial](http://meingraffiti.blogspot.com/2015/09/installing-pytest-on-windows-platform.html)
