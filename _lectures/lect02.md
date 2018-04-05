@@ -1,9 +1,13 @@
 ---
-num: "Lecture 1"
+num: "Lecture 2"
 desc: "Orientation to the course"
 ready: false
-date: 2017-04-03 12:30:00.00-7:00
+date: 2017-04-05 12:30:00.00-7:00
 ---
+
+# Earthquakes!
+
+Source of data: <https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson>
 
 # First hour: [lab00](/labs/lab00/): Hello World, Submitting on Gradescope
 
