@@ -10,15 +10,6 @@ convert_lab: lab01
 csxx: cs20
 ---
 
-<div style="font-size: 120%; background-color: yellow;" markdown="1">
-
-# This lab is not yet 100% ready to go
-
-It still needs to be converted from the old submit.cs autograder to the new Gradescope autograder.
-
-Still, you can start looking over it if you like.
-
-</div>
 
 
 # What this lab is about
@@ -259,7 +250,7 @@ ls
 
 If the file is NOT THERE, then:
 
-* Use your web browser to login to submit.cs
+* Use your web browser to login to Gradescope
 * Navigate to the page for {{ page.convert_lab }}
 * Find your last submission
 * Download the file and save it into your directory.
@@ -277,7 +268,7 @@ There are two work arounds:
 
 (1) Just copy paste the contents from the web page into a new file.
 
-(2) Bring up a web browser running on CSIL by typing either `firefox` or `google-chrome` in at the CSIL prompt. Note: This method is not fun.   It typically runs very slowly, and you may see lots of error messages on the screen, and it will take a long time.  But eventually the Chrome or Firefox browser should appear.  It will hopefully work well enough for you to log into submit.cs and download your convert.py file into your ~/{{page.csxx}}/{{ page.convert_lab }} directory.
+(2) Bring up a web browser running on CSIL by typing either `firefox` or `google-chrome` in at the CSIL prompt. Note: This method is not fun.   It typically runs very slowly, and you may see lots of error messages on the screen, and it will take a long time.  But eventually the Chrome or Firefox browser should appear.  It will hopefully work well enough for you to log into Gradescope and download your convert.py file into your <tt>~/{{page.csxx}}/{{ page.convert_lab }}</tt> directory.
 
 </div>
 
@@ -314,24 +305,19 @@ ls
 
 If so, you are almost ready for the next step.
 
-Before you go on though, a reminder that you can make a preliminary submission to submit.cs anytime you are "done for the day" (i.e. if you aren't completely finished with the lab, and are planning to come back to it later.)
+Before you go on though, a reminder that you can make a preliminary submission to Gradescope anytime you are "done for the day" (i.e. if you aren't completely finished with the lab, and are planning to come back to it later.)
 
 The benefit is that this provides a way to move your files between CSIL and your own computer, and/or to share files between pair partners.
 
-It's also a way you can put code in a place where the instructors can see it in case you want to ask a question on Piazza via private instructor note.  Upload your code first, then ask the question, and include the URL of the submission on submit.cs.  While you can only see your own submissions on submit.cs (and those of your pair partner, not no one elses), instructors have access to see all submissions for the class.
+It's also a way you can put code in a place where the instructors can
+see it in case you want to ask a question on Piazza via private
+instructor note.  Upload your code first, then ask the question, and
+note that you have a submission on Gradescope.  While you can only see
+your own submissions on Gradescope (and those of your pair partner,
+not no one else's), instructors have access to see all submissions for
+the class.
 
-To make a submission now, you can visit this page:
-
-<https://submit.cs.ucsb.edu/form/project/{{page.submit_cs_pnum}}/submission>
-
-* Navigate to that page, and upload your <tt>{{page.num}}</tt> AND your `convert.py` file.
-* YOU MUST UPLOAD BOTH.
-
-Or, if you are working on the ECI/CSIL/lab linux systems, you can also submit at the command line with this command, provided you are in the correct folder/diretory:
-
-<tt>~submit/submit -p {{page.submit_cs_pnum}} {{page.num}}.py convert.py</tt>
-
-
+Try making a submission to Gradescope now, and see whether you get any partial credit for the work done so far.
 
 # Step 4: Go back to your <tt>{{page.num}}</tt> and run it
 
@@ -794,7 +780,7 @@ Ok!  That's a lot of stuff.
 
 This lab was pretty "cookbook"&mdash;for the most part, you were led by the hand through it.
 
-If you did it all correctly, you should be able to submit your convert.py and {{page.num}}.py files to submit.cs, and get a perfect score right away.
+If you did it all correctly, you should be able to submit your convert.py and {{page.num}}.py files to Gradescope, and get a perfect score right away.
 
 If you don't get a perfect score, it's likely either because:
 
@@ -809,21 +795,14 @@ Now: you will have a follow up lab where you'll be asked to do all of the same t
 So, please make sure that you read back through this, and if any part of it doesn't make sense to you, <em>ask questions.</em>
 
 
-# Step 12: See perfect score on submit.cs; profit.
+# Step 12: See perfect score on Gradescope; profit.
 
-To submit your file to submit.cs, you can visit this page:
+Navigate to {{page.num}} on Gradescope, and upload your `convert.py` and `lab04.py` files.
 
-<https://submit.cs.ucsb.edu/form/project/{{page.submit_cs_pnum}}/submission>
-
-* Navigate to that page, and upload your <tt>{{page.num}}</tt> AND your `convert.py` file.
-* YOU MUST UPLOAD BOTH.
-
-Or, if you are working on the ECI/CSIL/lab linux systems, you can also submit at the command line with this command, provided you are in the correct folder/diretory:
-
-<tt>~submit/submit -p {{page.submit_cs_pnum}} {{page.num}}.py convert.py</tt>
-
-
-
-At this point, you should see that you have a perfect 100 points on submit.cs, and
+At this point, you should see that you have a perfect 100 points on Gradescope, and
 you are finished with the lab!
 
+If not, go back through each step of the lab carefully to see if you overlooked any part of the instructions before asking questions.  If you are still not sure, then either:
+
+* visit the [Open Lab Hours](https://ucsb-cs8-s18.github.io/info/s18_open_lab_hours/)
+* visit the [Instructor's Office Hours](https://ucsb-ccs-cs20-s18.github.io/info/office_hours/)
