@@ -6,6 +6,8 @@ desc: "input, scripts, command line arguments"
 assigned: 2017-08-25 11:00:00.00-7
 due: 2017-08-30 16:50:00.00-7
 submit_cs_pnum: 776 
+convert_lab: lab01
+csxx: cs20
 ---
 
 <div style="font-size: 120%; background-color: yellow;" markdown="1">
@@ -58,7 +60,7 @@ Here's a bit more detail about each of these:
    programmers to <em>create their own modules</em> and import them.
 
    In fact, in this lab, we are going to take the functions you wrote
-   for [lab02](/lab/lab02) in the file `convert.py` and import those
+   for [{{ page.convert_lab }}](/lab/{{ page.convert_lab }}) in the file `convert.py` and import those
    so that they can be reused in this lab.  Since those functions already
    have test cases, and those test cases are passing, we have confidence
    that we can build software on top of those functions.
@@ -76,7 +78,7 @@ Here's a bit more detail about each of these:
 
    *   Typing function calls directly at the Python Prompt (`>>>`).
 
-       For example, in lab02, we typed things like `fToC(32)` at the
+       For example, in {{ page.convert_lab }}, we typed things like `fToC(32)` at the
        `>>>` prompt and looked to see what was returned by the
        function.  We could change the value passed to the `fToC`
        function by putting different argument values inside the
@@ -113,9 +115,9 @@ Here's a bit more detail about each of these:
    every time you use a command such as any of these, you are running
    a program:
 
-   * `cd cs8`
-   * `mkdir lab04`
-   * `python3 -m pytest lab03.py`
+   * <tt>cd {{ page.csxx }}</tt>
+   * <tt>mkdir {{page.num}}</tt>
+   * <tt>python3 -m pytest lab03.py</tt>
 
    The first thing on the line, e.g. `cd`, `mkdir`, or `python3`, is the name
    of the program you are running.  The rest of it is provided as input
@@ -169,17 +171,17 @@ Ok, we are ready to get started.
 
 
 
-# Step 1: Make a `~/cs8/lab04` folder
+# Step 1: Make a <tt>~/{{page.csxx}}/{{page.num}}</tt> folder
 
 The easiest way to create this is to do the following, which
 will work from any directory:
 
-`mkdir -p ~/cs8/lab04`
+<tt>mkdir -p ~/{{page.csxx}}/{{page.num}}</tt>
 
 That form of the `mkdir` command, with the `-p` has these advantages:
 
 *  It creates the entire path of directories in case any of the intermediate
-   ones don't exist (that is, it will create a `~/cs8` directory too if it
+   ones don't exist (that is, it will create a <tt>~/{{page.csxx}}</tt> directory too if it
    isn't there yet).
 
 *  If the directory being create already exists, it won't complain
@@ -187,7 +189,7 @@ That form of the `mkdir` command, with the `-p` has these advantages:
 *  Since the directory being created starts with `~`, it's an absolute
    path.  That is, it is a specfic path all the way from the
    root directory (`/`), through any intermediate directories
-   all the way down to the `lab04` directory
+   all the way down to the <tt>{{ page.num }}</tt> directory
      
    Because it is an absolute path, this command <em>does the right thing,
    regardless of what your current working directory happens to be.</em>
@@ -197,34 +199,34 @@ That form of the `mkdir` command, with the `-p` has these advantages:
 
 Ok, once you've created this directory, to get yourself into it, type:
 
-`cd ~/cs8/lab04`
+<tt>cd ~/{{page.csxx}}/{{page.num}}</tt>
 
 Again, since that's an absolute path, it works from any directory.
 
-# Step 2: Create a file called `lab04.py` in your `~/cs8/lab04` directory
+# Step 2: Create a file called <tt>{{page.num}}</tt> in your <tt>~/{{page.csxx}}/{{page.num}}</tt> directory
 
-To start out lab04, write the line:
+To start out {{page.num}}, write the line:
 
 ```
 import convert
 ```
 
-That line is going to import the convert.py file that we wrote in lab02.
+That line is going to import the convert.py file that we wrote in {{ page.convert_lab }}.
 
 Of course, that will only work if the convert.py file is in our current
 working directory. So, next, we'll get that file where it should be.
 
-First, though, use the "Save" command to save your lab04.py file.
+First, though, use the "Save" command to save your {{page.num}}.py file.
 
-# Step 3: Copy 'convert.py' from your `lab02` directory to your `lab04` directory
+# Step 3: Copy 'convert.py' from your <tt>{{ page.convert_lab }}</tt> directory to your <tt>{{ page.num }}</tt> directory
 
-I realize that you may be working on the same computer, or a different one from the one where you did lab02.  And, it's also possible that you didn't put your `convert.py` file in the "right place", i.e. in your `~/cs8/lab02` folder.
+I realize that you may be working on the same computer, or a different one from the one where you did {{ page.convert_lab }}.  And, it's also possible that you didn't put your `convert.py` file in the "right place", i.e. in your <tt>~/{{page.csxx}}/{{ page.convert_lab }}</tt> folder.
 
 No worries.  We are going to proceed as follows:
 
-* First, we'll make sure you *have* a `~/cs8/lab02` on the computer where you are working.
-* Next, we'll make sure that that directory contains a good copy of your `convert.py` file from lab02
-* Finally, we'll go back to our `~/cs8/lab04` directory, and use a Unix command to copy the `convert.py` file over to that directory.
+* First, we'll make sure you *have* a <tt>~/{{page.csxx}}/{{ page.convert_lab }}</tt> on the computer where you are working.
+* Next, we'll make sure that that directory contains a good copy of your `convert.py` file from {{ page.convert_lab }}
+* Finally, we'll go back to our <tt>~/{{page.csxx}}/{{page.num}}</tt> directory, and use a Unix command to copy the `convert.py` file over to that directory.
 
 (NOTE: It may be tempting to just click and drag the file, using your
 mouse to do the copying, and skip all command line stuff.  I
@@ -235,17 +237,17 @@ practice these steps.  Entirely up to you.)
 
 Alright, let's dive in.  First, try this:
 
-```
-cd ~/cs8/lab02
-```
+
+<tt>cd ~/{{page.csxx}}/{{ page.convert_lab }}</tt>
+
 
 If it didn't work, because that directory doesn't exist on this computer,
 or in this account, then create it like this, and try the cd command again:
 
-```
-mkdir -p ~/cs8/lab02
-cd ~/cs8/lab02
-```
+
+<tt>mkdir -p ~/{{page.csxx}}/{{ page.convert_lab }}</tt><br>
+<tt>cd ~/{{page.csxx}}/{{ page.convert_lab }}</tt></br>
+
 
 (For an explanation of the `-p` flag, see the discussion earlier in this lab.)
 
@@ -258,7 +260,7 @@ ls
 If the file is NOT THERE, then:
 
 * Use your web browser to login to submit.cs
-* Navigate to the page for lab02
+* Navigate to the page for {{ page.convert_lab }}
 * Find your last submission
 * Download the file and save it into your directory.
 
@@ -275,7 +277,7 @@ There are two work arounds:
 
 (1) Just copy paste the contents from the web page into a new file.
 
-(2) Bring up a web browser running on CSIL by typing either `firefox` or `google-chrome` in at the CSIL prompt. Note: This method is not fun.   It typically runs very slowly, and you may see lots of error messages on the screen, and it will take a long time.  But eventually the Chrome or Firefox browser should appear.  It will hopefully work well enough for you to log into submit.cs and download your convert.py file into your ~/cs8/lab02 directory.
+(2) Bring up a web browser running on CSIL by typing either `firefox` or `google-chrome` in at the CSIL prompt. Note: This method is not fun.   It typically runs very slowly, and you may see lots of error messages on the screen, and it will take a long time.  But eventually the Chrome or Firefox browser should appear.  It will hopefully work well enough for you to log into submit.cs and download your convert.py file into your ~/{{page.csxx}}/{{ page.convert_lab }} directory.
 
 </div>
 
@@ -285,7 +287,7 @@ Ok, assuming the `convert.py file is there, you can use one of these two command
 * `more convert.py`
 
 Try both of those now.  You should see that `convert.py` file is your finished
-product from lab02.
+product from {{ page.convert_lab }}.
 
 Note that the `cat convert.py` file lists the entire contents of the file.  The thing is, if the file is long, it just spews out the entire thing all at once. 
 
@@ -294,17 +296,15 @@ The command `more convert.py` file *also* lists the contents of the file, but if
 (There are other keys you can press as well, including `q` to quit in the middle of the file, as well as keys to search for particular text, and many other fun goodies.  To learn more about more, see [this tutorial](https://shapeshed.com/unix-more/) and this [wikipedia article](https://en.wikipedia.org/wiki/More_(command))).
 
 Assuming that file is where it should be, i.e. in
-the directory `~/cs8/lab02`, we can now go back to your `~/cs8/lab04` directory with a cd command:
+the directory <tt>~/{{page.csxx}}/{{ page.convert_lab }}</tt>, we can now go back to your <tt>~/{{page.csxx}}/{{page.num}}</tt> directory with a cd command:
 
-```
-cd ~/cs8/lab04
-```
+
+<tt>cd ~/{{page.csxx}}/{{page.num}}</tt>
+
 
 Now, copy the `convert.py` file into your current directory with this command. This is the unix `cp` command which stands for "copy":
 
-```
-cp ~/cs8/lab02/convert.py ~/cs8/lab04
-```
+<tt>cp ~/{{page.csxx}}/{{ page.convert_lab }}/convert.py ~/{{page.csxx}}/{{page.num}}</tt>
 
 After running this command, use `ls` to see if the `convert.py` file is there:
 
@@ -324,20 +324,20 @@ To make a submission now, you can visit this page:
 
 <https://submit.cs.ucsb.edu/form/project/{{page.submit_cs_pnum}}/submission>
 
-* Navigate to that page, and upload your `lab04.py` AND your `convert.py` file.
+* Navigate to that page, and upload your <tt>{{page.num}}</tt> AND your `convert.py` file.
 * YOU MUST UPLOAD BOTH.
 
 Or, if you are working on the ECI/CSIL/lab linux systems, you can also submit at the command line with this command, provided you are in the correct folder/diretory:
 
-<tt>~submit/submit -p {{page.submit_cs_pnum}} lab04.py convert.py</tt>
+<tt>~submit/submit -p {{page.submit_cs_pnum}} {{page.num}}.py convert.py</tt>
 
 
 
-# Step 4: Go back to your `lab04.py` and run it
+# Step 4: Go back to your <tt>{{page.num}}</tt> and run it
 
 If you've followed the instructions up to this point,
-your `lab04.py` file
-(which should be located in your `~/cs8/lab04` folder) only has these contents:
+your <tt>{{page.num}}</tt> file
+(which should be located in your <tt>~/{{page.csxx}}/{{page.num}}</tt> folder) only has these contents:
 
 ```
 import convert
@@ -368,19 +368,19 @@ ImportError: No module named convert
 >>> 
 ```
 
-If you see the second thing (the error message), it suggests that you ran `idle3` from some directory other than your `~/cs8/lab04` directory where your `convert.py` program is located.
+If you see the second thing (the error message), it suggests that you ran `idle3` from some directory other than your <tt>~/{{page.csxx}}/{{page.num}}</tt> directory where your `convert.py` program is located.
 
 If you see the error, do this to get back on track (otherwise, just go on to th next step):
 
 * Quit `idle3`
-* make sure that your `lab04.py` and your `convert.py` are both in your `~/cs8/lab04` folder
-* make sure that `~/cs8/lab04` is your current working directory (use `pwd` to check that)
+* make sure that your <tt>{{page.num}}</tt> and your `convert.py` are both in your <tt>~/{{page.csxx}}/{{page.num}}</tt> folder
+* make sure that <tt>~/{{page.csxx}}/{{page.num}}</tt> is your current working directory (use `pwd` to check that)
 * Start `idle3` again.
 
 
 # Step 5: Learning about the `__name__=="__main__"` block
 
-Ok, now we are ready to put some code in our lab04.py.
+Ok, now we are ready to put some code in our {{page.num}}.py.
 
 This is an important step to work through slowly and carefully, to get
 the learning&mdash;not just to get the result.    There isn't much code
@@ -434,7 +434,7 @@ This is main block of convert.py
 >>>
 ```
 
-Then, run your `lab04.py` file using "Run Module".  You should see this:
+Then, run your <tt>{{page.num}}</tt> file using "Run Module".  You should see this:
 
 ```
 ================= RESTART: /Users/pconrad/cs8/lab04/lab04.py =================
@@ -449,9 +449,9 @@ Ok, what just happened?  Here's what:
 
 * When you ran `convert.py` you saw the output of both lines of code: the one that was outside the `__name__=="__main__"` block, and the one inside the block.  That's because when you run the file directly, you see both.
 
-* When you ran `lab04.py`, you saw the output of both lines of code in `lab04.py`, but you <em>also saw the line from outside the `__name__=="__main__"` block in `convert.py`</em>.
+* When you ran <tt>{{page.num}}</tt>, you saw the output of both lines of code in <tt>{{page.num}}</tt>, but you <em>also saw the line from outside the `__name__=="__main__"` block in `convert.py`</em>.
 
-* You saw some output from `convert.py` when you ran `lab04.py` because you did `import convert`.
+* You saw some output from `convert.py` when you ran <tt>{{page.num}}</tt> because you did `import convert`.
 
 * But you ONLY saw the output from code that was OUTSIDE the `__name__=="__main__"` block.
 
@@ -481,17 +481,16 @@ side effects.
 # Step 6: Remove the print statements outside the main block
 
 So, our next step will be to remove the print statements in `convert.py`
-and `lab04.py` that are outside the `__name__=="__main__"` block.  (We only put those in temporarily in this step so that you could understand how the
+and <tt>{{page.num}}</tt> that are outside the `__name__=="__main__"` block.  (We only put those in temporarily in this step so that you could understand how the
 `__name__=="__main__"` block works.)
 
 Specifically,
 remove these lines:
 
-From lab04.py, delete this line:
+From {{page.num}}.py, delete this line:
 
-```
-print("This is outside the main block of lab04.py")
-```
+
+<tt>print("This is outside the main block of {{page.num}}.py")</tt>
 
 From convert.py, delete this line:
 
@@ -501,7 +500,7 @@ print("This is outside the main block of convert.py")
 
 Run your two files again, and see if your results match those shown below.
 
-Note that when switching between two file windows in `idle3` you must actully click <em>inside</em> the window in `idle3` before you run&mdash;just bringing the window to the front isn't enough (you might still running `convert.py` when you think you are runnnig `lab04.py`, or vice-versa.)
+Note that when switching between two file windows in `idle3` you must actully click <em>inside</em> the window in `idle3` before you run&mdash;just bringing the window to the front isn't enough (you might still running `convert.py` when you think you are runnnig <tt>{{page.num}}</tt>, or vice-versa.)
 
 For `convert.py`:
 
@@ -511,7 +510,7 @@ This is main block of convert.py
 >>> 
 ```
 
-For `lab04.py`:
+For <tt>{{page.num}}</tt>:
 
 ```
 ================= RESTART: /Users/pconrad/cs8/lab04/lab04.py =================
@@ -526,7 +525,7 @@ If so, you are ready for the next step.
 Now, we'll show how your program can have a conversation with the
 user.
 
-Enter this into the main block of your `lab04.py` file, as shown below:
+Enter this into the main block of your <tt>{{page.num}}</tt> file, as shown below:
 
 ```
 
@@ -660,7 +659,7 @@ Ok, now we are going to add another strange bit of code to our file.
 
 The following line must be the VERY first line of the file, before
 any imports, any other comments, any blank lines, and it must be truly
-EXACTLY as shown.  Put this at the very top of your `lab04.py` file.
+EXACTLY as shown.  Put this at the very top of your <tt>{{page.num}}</tt> file.
 
 ```
 #!/usr/bin/env python3
@@ -681,20 +680,20 @@ Bring up a terminal window. If your terminal window is running idle3,
 you can use the special trick of pressing CTRL-Z, then `bg` followed
 by enter to get your cursor back.
 
-Then use `pwd` to make sure you are in `~/cs8/lab04`.  If not, put yourself
-there.  Make sure, also, that you can see the `lab04.py` file (use `ls` to
+Then use `pwd` to make sure you are in <tt>~/{{page.csxx}}/{{page.num}}</tt>.  If not, put yourself
+there.  Make sure, also, that you can see the <tt>{{page.num}}</tt> file (use `ls` to
 list the files.)
 
-If you can, then use this Unix command.  This makes your `lab04.py` executable:
+If you can, then use this Unix command.  This makes your <tt>{{page.num}}</tt> executable:
 
 ```
-chmod u+x lab04.py
+chmod u+x {{page.num}}.py
 ```
 
 Finally, type this at the Unix prompt (make sure you saved the file in `idle3` first):
 
 ```
-./lab04.py
+./{{page.num}}.py
 ```
 
 You should see the following:
@@ -723,12 +722,12 @@ But wait, it gets even better.   We still have one more trick.
 
 # Step 10: Command line arguments with `sys.arg`
 
-Wouldn't it be cool if instead of having to type `./lab04.py` on one line
+Wouldn't it be cool if instead of having to type `./{{page.num}}.py` on one line
 and then typing in temperature after we are prompted, if we could just
 type:
 
 ```
-./lab04.py 68
+./{{page.num}}.py 68
 ```
 
 And it would just print the result?
@@ -761,13 +760,13 @@ With this:
 Save this change. Now try this at the linux shell prompt:
 
 ```
-./lab04.py 68
+./{{page.num}}.py 68
 ```
 
 Then try this at the linux shell prompt:
 
 ```
-./lab04.py
+./{{page.num}}.py
 ```
 
 What you should see is a result like that shown below:
@@ -795,12 +794,12 @@ Ok!  That's a lot of stuff.
 
 This lab was pretty "cookbook"&mdash;for the most part, you were led by the hand through it.
 
-If you did it all correctly, you should be able to submit your convert.py and lab04.py files to submit.cs, and get a perfect score right away.
+If you did it all correctly, you should be able to submit your convert.py and {{page.num}}.py files to submit.cs, and get a perfect score right away.
 
 If you don't get a perfect score, it's likely either because:
 
-* (a) there may have been still some unresolved problem from your lab02 submission, or
-* (b) there might be some very small formatting error in one of the strings (e.g. you wrote `"This is the main blerg of lab04.py"` instead of `"This is the main block of lab04.py"`
+* (a) there may have been still some unresolved problem from your {{ page.convert_lab }} submission, or
+* (b) there might be some very small formatting error in one of the strings (e.g. you wrote <tt>"This is the main blerg of {{page.num}}.py"</tt> instead of <tt>"This is the main block of {{page.num}}.py"</tt>
 
 But most likely, you'll get a perfect score on the first try.
 
@@ -816,12 +815,12 @@ To submit your file to submit.cs, you can visit this page:
 
 <https://submit.cs.ucsb.edu/form/project/{{page.submit_cs_pnum}}/submission>
 
-* Navigate to that page, and upload your `lab04.py` AND your `convert.py` file.
+* Navigate to that page, and upload your <tt>{{page.num}}</tt> AND your `convert.py` file.
 * YOU MUST UPLOAD BOTH.
 
 Or, if you are working on the ECI/CSIL/lab linux systems, you can also submit at the command line with this command, provided you are in the correct folder/diretory:
 
-<tt>~submit/submit -p {{page.submit_cs_pnum}} lab04.py convert.py</tt>
+<tt>~submit/submit -p {{page.submit_cs_pnum}} {{page.num}}.py convert.py</tt>
 
 
 
