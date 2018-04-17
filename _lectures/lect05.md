@@ -5,6 +5,10 @@ ready: false
 date: 2017-04-05 12:30:00.00-7:00
 ---
 
+# Code from today's lecture
+
+<https://github.com/ucsb-ccs-cs20-s18/LECTURE_04_17>
+
 # Update on homework
 
 I've updated the homework online, and provided places to submit all of the homeworks from h00 through h06 online.
