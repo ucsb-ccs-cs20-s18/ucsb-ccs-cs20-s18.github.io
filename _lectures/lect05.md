@@ -15,11 +15,23 @@ take-home exam (on the honor system) to check your understanding of course conce
 If you need more time (within reason, i.e. a few days), let me know, but I'd prefer not to extend those due dates much, so that this isn't hanging out as "unfinished business" for 
 either of us.
 
+# imports and the `if __name__=='__main__':` thing  
+
+# Various ways of running Python code
+
+* From a file inside IDLE
+* at IDLE `>>>` prompt
+* From a file outside IDLE using `python3 file.py` or `python file.py`
+* From a file outside IDLE in a shell, using a `shbang`
+* Importing one file into another
+* Using `python -i file.py` or `python3 -i file.py`
+
 # lab03--more practice with function definitions and tests
 
 Today, we'll start by working on lab03, which gives us more practice with writing function definitions and tests.
 
-# Then... something more challenging
+
+
 
 
 
