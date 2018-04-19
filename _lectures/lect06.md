@@ -19,11 +19,11 @@ date: 2017-04-19 12:30:00.00-7:00
 
 ## Read json  from file into dict
 
-Code is in [readJson.py](readJson.py/)
+Code is in [readJson.py](https://github.com/ucsb-ccs-cs20-s18/ucsb-ccs-cs20-s18.github.io/blob/master/_lectures/lect06/readJson.py/)
 
 Adapted from: <https://stackoverflow.com/questions/20199126/reading-json-from-a-file>
 
-Assuming [`data_in.json`](data_in.json/) is a file containing:
+Assuming [`data_in.json`](https://github.com/ucsb-ccs-cs20-s18/ucsb-ccs-cs20-s18.github.io/blob/master/_lectures/lect06/data_in.json/) is a file containing:
 
 ```json
 {
@@ -45,9 +45,9 @@ with open('data_in.json') as json_data:
 
 Adapted from: <https://stackoverflow.com/questions/12309269/how-do-i-write-json-data-to-a-file>
 
-This writes to a file called [`data_out.json`](data_out.json/).
+This writes to a file called [`data_out.json`](https://github.com/ucsb-ccs-cs20-s18/ucsb-ccs-cs20-s18.github.io/blob/master/_lectures/lect06/data_out.json/).
 
-Code is in [writeJson.py](writeJson.py/)
+Code is in [writeJson.py](https://github.com/ucsb-ccs-cs20-s18/ucsb-ccs-cs20-s18.github.io/blob/master/_lectures/lect06/writeJson.py/)
 
 ```
 import json
