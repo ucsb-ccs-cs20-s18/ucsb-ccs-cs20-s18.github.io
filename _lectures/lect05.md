@@ -2,7 +2,7 @@
 num: "Lecture 5"
 desc: "work on lab03, catch up on homeworks"
 ready: false
-date: 2017-04-05 12:30:00.00-7:00
+date: 2017-04-17 12:30:00.00-7:00
 ---
 
 # Code from today's lecture
