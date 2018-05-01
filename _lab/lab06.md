@@ -26,7 +26,7 @@ For this lab, you will create two files:
 
 There is starter code for each of these (`.py` files) at the following link:
 
-* <{{}}>
+* <{{page.starter_code_repo}}>
 
 I suggest you proceed as follows:
 
