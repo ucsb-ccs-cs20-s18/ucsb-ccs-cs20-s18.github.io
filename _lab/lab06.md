@@ -1,6 +1,6 @@
 ---
 layout: lab
-num: lab07
+num: lab06
 ready: true
 desc: "min/max, index vs. value"
 assigned: 2018-05-01 12:30
