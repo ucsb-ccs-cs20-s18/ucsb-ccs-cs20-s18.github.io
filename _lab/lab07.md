@@ -545,7 +545,7 @@ def drawRectangle(t,width, height, tilt, penColor, fillColor):
    pass      
 
  
-def drawTwoRectangles(t,):
+def drawTwoRectangles(t):
    " docstring here "
    pass
 
