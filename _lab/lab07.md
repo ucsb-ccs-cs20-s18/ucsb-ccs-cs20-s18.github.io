@@ -1,7 +1,7 @@
 ---
 layout: lab
 num: lab07
-ready: false
+ready: true
 desc: "Turtle Graphics: Basic shapes"
 assigned: 2018-05-03 12:30:00.00
 due: 2018-05-10 12:30:00.00-7
