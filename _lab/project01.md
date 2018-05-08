@@ -8,7 +8,7 @@ due: 2018-05-20 23:59:00.00-8
 prev_lab: lab07
 prev_lab_solution_url: https://github.com/ucsb-ccs-cs20-s18/ucsb-ccs-cs20-s18.github.io/blob/master/_lab/project01/basicShapes.py
 csxx: cs20
-worksheet: ic02TBD
+worksheet: ic01
 ---
 
 ## Goal
