@@ -19,7 +19,7 @@ The goal of this project is to draw a forest scene from basic shape primitives t
 * using functions as building blocks in more complex compositions
 * using loops to perform repetitive tasks while keeping your code DRY (Don't repeat yourself)
 * using randomization to create variety and controlled chaos in your drawings
-* applying concepts learned in lab04 to create and use your own modules
+* applying concepts learned in previous labs about creating and using your own modules
 
 *pair programming is recommended for this project, but not mandatory*
 
