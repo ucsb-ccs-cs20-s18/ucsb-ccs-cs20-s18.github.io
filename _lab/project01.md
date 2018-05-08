@@ -64,13 +64,10 @@ Open up `idle3` and select the menu option `File => New File` to create a new fi
 
 In this file, put this code (but put your name instead of "your name goes here")
 
-<div style="white-space:pre;"><tt>
-
-\# {{page.num}}.py, your name goes here
-
-if __name__=="__main__":
-  print('Inside main of {{page.num}}.py')
-
+<div style="white-space:pre;">
+<tt>\# {{page.num}}.py, your name goes here</tt>
+<tt>if __name__=="__main__":</tt>
+  <tt>print('Inside main of {{page.num}}.py')</tt>
 </div>
 
 The `if` test for `__name__=="__main__":` is where everthing in your program
