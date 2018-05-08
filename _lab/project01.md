@@ -415,12 +415,12 @@ Your code in 'project01.py` should be structured as follows:
 
 If your code meets all those criteria, you should be in good shape to submit it.
 
-## Step 9 (OPTIONAL EXTRA CREDIT OPPORTUNITY) Make it your own!
+## Step 9 (OPTIONAL) Make it your own!
 
-With this project you have the opportunity to earn 10 points of extra credit by creating a non-trivial object to add to your scene.
+With this project you have the opportunity to extend your learning by creating a non-trivial object to add to your scene.
 This can be anything you can come up with and draw using the turtle. Some examples include: a flower, a robot, etc. Feel free to use any functions inside [the Python documentation on the turtle module](https://docs.python.org/3/library/turtle.html)
 
-Do not ask the TAs or tutors what is consider "non-trivial" because whether you earn the extra credit or not is subjective to your grader. Overall, if it's more than just a basic shape then you will receive the points.
+
 
 ## Step 10: Submitting via Gradescope
 
