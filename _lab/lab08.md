@@ -3,8 +3,8 @@ layout: lab
 num: lab08
 ready: true
 desc: "2D Lists and Nested for Loops"
-assigned: 2018-02-21 8:00:00.00-7
-due: 2018-02-25 23:59:59.59-7
+assigned: 2018-05-08 8:00:00.00-7
+due: 2018-05-18 23:59:59.59-7
 csxx: cs20
 labxx_py_url: "https://github.com/ucsb-ccs-cs20-s18/ucsb-ccs-cs20-s18.github.io/blob/master/_lab/lab08/lab08.py"
 labxx_tests_py_url: "https://github.com/ucsb-ccs-cs20-s18/ucsb-ccs-cs20-s18.github.io/blob/master/_lab/lab08/lab08_tests.py"
