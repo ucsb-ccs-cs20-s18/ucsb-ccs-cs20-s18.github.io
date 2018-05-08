@@ -66,7 +66,7 @@ In this file, put this code (but put your name instead of "your name goes here")
 
 <div style="white-space:pre;"><tt>
 
-# {{page.num}}.py, your name goes here
+\# {{page.num}}.py, your name goes here
 
 if __name__=="__main__":
   print('Inside main of {{page.num}}.py')
