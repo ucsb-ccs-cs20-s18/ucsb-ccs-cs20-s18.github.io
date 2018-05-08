@@ -81,11 +81,14 @@ Save this, and run it.   You should see <tt>Inside main of {{page.num}}.py</tt> 
 
 ## Step 3: Create a basicShapes module from your {{page.prev_lab}}.py
 
-* Make a copy of your code from {{page.prev_lab}} and rename it as basicShapes.py:
-
-
+* Use the `mkdir` command to make a directory called <tt>~/{{page.csxx}}/{{page.num}}</tt>
+* Assuming your <tt>{{page.prev_lab}}.py</tt> from {{page.prev_lab}} is 
+   in a directory called <tt>~/{{page.csxx}}/{{page.prev_lab}}</tt>, 
+   you can use this command to copy it into your new directory
+   and rename it as `basicShapes.py` all in one step:
+   
 <p style="white-space:pre;"><tt>
-cp ~/{{page.csxx}}/{{page.prev_lab}}/{{page.prev_lab}}.py ~/{{page.csxx}}/{{page.num}}/basicShapes.py
+   cp ~/{{page.csxx}}/{{page.prev_lab}}/{{page.prev_lab}}.py ~/{{page.csxx}}/{{page.num}}/basicShapes.py
 </tt></p>
 
 * If you were not able to finish {{page.prev_lab}}.py, you may use the solution available at this link:
