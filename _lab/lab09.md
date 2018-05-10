@@ -1,10 +1,10 @@
 ---
 layout: lab
 num: lab09
-ready: false
+ready: true
 desc: "Recursion"
-assigned: 2018-03-14 8:00:00.00-7
-due: 2018-03-18 23:59:59.59-7
+assigned: 2018-05-10 13:00:00.00
+due: 2018-05-24 23:59:59.59
 csxx: cs20
 ---
 
@@ -34,8 +34,10 @@ In this lab, you will need to create two files:
 * <strong>Please add a comment with you and your partner's name (if applicable) at the top of each file.</strong>
 
 Starter code is provided for you and are located at (you may need to refresh the page if the links do not load immediately):
-* <https://ucsb-cs8-w18-wang.github.io/lab/lab08/lab08.py>
-* <https://ucsb-cs8-w18-wang.github.io/lab/lab08/lab08_student_tests.py>
+
+* [lab09.py](https://github.com/ucsb-ccs-cs20-s18/ucsb-ccs-cs20-s18.github.io/blob/master/_lab/lab09/lab09.py)
+* [lab09.py](https://github.com/ucsb-ccs-cs20-s18/ucsb-ccs-cs20-s18.github.io/blob/master/_lab/lab09/lab09_student_tests.py)
+
 
 You will complete the portions in the starter code by doing the following:
 
@@ -57,4 +59,4 @@ You are encouraged to try submitting to Gradescope periodically for several reas
 
 # Upload `{{page.num}}.py` and `{{page.num}}_student_tests.py` to Gradescope.
 
-Once you're done with writing your functions, navigate to the Lab assignment {{page.num}} on Gradescope and upload your `{{page.num}}.py` and `{{page.num}}_student_tests.py` files. <strong>*Remember to add your name, and your partner to Groups Members for this submission on Gradescope if applicable. At this point, if you worked in a pair, it is a good idea for both partners to log into Gradescope and see if you can see the uploaded files for Lab08.*</strong>
+Once you're done with writing your functions, navigate to the Lab assignment {{page.num}} on Gradescope and upload your `{{page.num}}.py` and `{{page.num}}_student_tests.py` files. <strong>*Remember to add your name, and your partner to Groups Members for this submission on Gradescope if applicable. At this point, if you worked in a pair, it is a good idea for both partners to log into Gradescope and see if you can see the uploaded files for {{page.num}}.*</strong>
