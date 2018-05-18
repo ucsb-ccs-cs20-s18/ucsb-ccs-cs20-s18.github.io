@@ -92,7 +92,7 @@ Save this, and run it.   You should see <tt>Inside main of {{page.num}}.py</tt> 
 </tt></p>
 
 * If you were not able to finish {{page.prev_lab}}.py, you may use the solution available at this link:
-[{{page.prev_lab}}-solution]({{page.prev_lab_solution_url}} as your `basicShapes.py` file.
+[{{page.prev_lab}}-solution]({{page.prev_lab_solution_url}}) as your `basicShapes.py` file.
 
 * If necessary, modify the code in `basicShapes.py` so that you can import the code as a module.   That is, everything except `import` statements, and function definitions should be inside the "main block", the part that is indented inside the code:
 
