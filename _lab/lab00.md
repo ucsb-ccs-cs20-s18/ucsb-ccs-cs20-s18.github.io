@@ -30,26 +30,14 @@ challenging. Future labs will require quite a bit more thought!
 
 # Step by Step Instructions
 
-## Step 1: Verify your College of Engineering Account(s)
 
-The Gauchospace message that welcomed you to the course invited you to 
-create a College of Engineering account (also known as a ECI account, or a CSIL account) at this link:
-
-<https://accounts.engr.ucsb.edu/create/>
-
-We hope you did that&mdash;if so, you should be able to use that account to login on the computers in Phelps 3525, as well as the computers in the CSIL lab.   If you ever forget the password to your ECI/CSIL account, you can reset it here:
-
-<https://accounts.engr.ucsb.edu/maintain/>
-
-If your account doesn't work, ask a course helper for assistance.
-
-The CSIL lab, by the way, is on the ground floor of Harold Frank Hall.  The glass front doors of Harold Frank Hall look out towards the ocean.  Stand just outside those doors with your back towards the ocean.   The doors to the CSIL lab are just on your right.  (If you can't look over your shoulder and see an great big tree, with the ocean just behind it, you are on the wrong side of the building.)   Hours vary--its open almost all the time during the regular school year
 
 ## Step 2: Bring up a "terminal" 
  
-On the Linux systems, there are a lot of things we can do with pointing and clicking with the mouse, just like on Windows or Mac. But there are also many things we can only do with the command line, or can do more easily with the command line.
+On Mac or Linux, use the terminal app to bring up a command line.
 
-So, one of the first steps will often be to bring up a "Terminal" window&mdash;a window that gives us access to the Linux "command line".
+On Windows, use "git bash here".
+* This assumes you have already installed "Git for Windows" and "Python for Windows", with adding Python into the path.
 
 <div style="float:right; width:100px; border: 1px solid #063;" markdown="1">
 ![terminal icon](Terminal.png)
@@ -217,10 +205,3 @@ After you submit something on Gradescope, you will have access to the "Autograde
 
 If the tests don't pass, you may get some error message that may or may not be obvious at this point. Don't worry - if the tests didn't pass, take a minute to think if your print statement is <strong>EXACTLY</strong> like stated in the lab instructions (including the same capitalization, spaces, punctuation, etc.) and the file name is <strong>EXACTLY</strong> `hello.py`. If your tests didn't pass and you're still not sure why you're getting the error, feel free to ask one of the course helpers. 
 
-## Final Step:  Log Out
-
-Actually, this is the final step of <em>every lab</em>, but we probably won't
-remind you again after this one.  In fact, you should do this every time you walk away from a lab computer, either in Phelps 3525 or CSIL.   Here's how:
-
-* Find the System Menu at the top of the screen.
-* Select Log Out
