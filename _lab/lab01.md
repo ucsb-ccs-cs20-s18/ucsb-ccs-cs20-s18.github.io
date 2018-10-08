@@ -16,53 +16,31 @@ In this lab, you'll practice:
 * Submitting your functions and test cases to Gradescope for grading
 
 
-# Step 0: Install pytest for your account (or on your machine)
+# Step 0: Install pytest on your machine)
 
-This lab is one that you may find you need to do on the CSIL machines.
-It's important to differentiate between the Python shell `>>>` vs the terminal `$`. 
+To install `pytest` for your version of Python, you'll need to do either:
 
-It is probably the case that `pytest` is not installed for your version
-of Python3.  You can check by typing `python3` at the Terminal prompt
-to get to the Python Shell Prompt `>>>`, and then typing `import pytest`.
+* `pip install pytest`
+* OR `pip3 install pytest`
 
-If you get an error message like this one, then pytest is not installed.
+Once you've done that at the command prompt, go into Python and try
 
 ```
-[cgaucho@csil-12 ~]$ python3
-Python 3.4.3 (default, Aug 9 2016, 15:36:17) [GCC 5.3.1 20160406 (Red Hat 5.3.1-6)] on linux
-Type "help", "copyright", "credits" or "license" for more information.
->>> import pytest
-Traceback (most recent call last):
-File "", line 1, in ImportError: No module named 'pytest'
->>> exit()
-[cgaucho@csil-12 ~]$ pip3 install --user pytest
+>>> import pytest`
+>>>
 ```
+
+If you don't get an error message, that means it worked ok.  If you do get an error message, then ask for help.
 
 In order to exit the python shell in terminal press Ctrl+D or type exit() in order to return to the normal terminal. 
 
 To install it, type this command into the terminal session
 (the Unix Terminal prompt) to install pytest for your CSIL account:
 
-```
-pip3 install --user pytest
-```
-
-OR FOR YOUR OWN COMPUTER, just use:
-
-```
-pip3 install pytest
-```
-
-To install pytest on Windows, see [this tutorial](http://meingraffiti.blogspot.com/2015/09/installing-pytest-on-windows-platform.html)
- 
-You can also *try* this command on Mac.  It might work, or it
-might not.  If it does&mdash;great, then you can do this lab on your own
-machine.  If not, then you'll need to do it on CSIL.
-
 The output should look something like this:
 
 ```
-[cgaucho@csil-12 ~]$ pip3 install --user pytest
+[cgaucho@csil-12 ~]$ pip3 install  pytest
 You are using pip version 7.1.0, however version 9.0.1 is available.
 You should consider upgrading via the 'pip install --upgrade pip' command.
 Collecting pytest
